@@ -18,8 +18,8 @@ pipeline {
             steps {
                 // Execute shell commands to copy HTML files to S3 bucket
                 script {
-                    sh "aws s3 cp public/index.html s3://my-90bucket/"
-                    sh "aws s3 cp public/error.html s3://my-90bucket/"
+                    sh "aws s3 cp public/index.html s3://"jenkinstf-ec22-static-bucket/"
+                    sh "aws s3 cp public/error.html s3://"jenkinstf-ec22-static-bucket/"
                 }
             }
         }
@@ -29,7 +29,7 @@ pipeline {
             steps {
                 // Execute shell command to set bucket policy using policy.json file
                 script {
-                    sh "aws s3api put-bucket-policy --bucket my-90bucket --policy file://policy.json"
+                    sh "aws s3api put-bucket-policy --bucket"jenkinstf-ec22-static-bucket --policy file://policy.json"
                 }
             }
         }
