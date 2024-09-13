@@ -6,7 +6,7 @@
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::jenkinstf-ec2-static-bucket2023/*"
+            "Resource": "arn:aws:s3:::jenkinstf-ec2-static-bucket123/*"
         }
     ]
 }
