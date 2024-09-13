@@ -29,7 +29,7 @@ pipeline {
             steps {
                 // Execute shell command to set bucket policy using policy.json file
                 script {
-                    sh "aws s3api put-bucket-policy --bucketjenkinstf-ec2-static-bucket123 --policy file://policy.json"
+                    sh "aws s3api put-bucket-policy --bucket jenkinstf-ec2-static-bucket123 --policy file://policy.json"
                 }
             }
         }
